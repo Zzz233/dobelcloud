@@ -21,8 +21,8 @@ proxyMeta = "http://%(user)s:%(pass)s@%(host)s:%(port)s" % {
 }
 
 proxies = {
-        "http"  : proxyMeta,
-        "https" : proxyMeta,
+        "http://"  : proxyMeta,
+        "https://" : proxyMeta,
 }
 
 result = requests.get(targetUrl, proxies=proxies)
